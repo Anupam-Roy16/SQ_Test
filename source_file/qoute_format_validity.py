@@ -68,36 +68,32 @@ class Qoute_validation:
     def check_validity(self):
         try:
             self.title,self.body,self.reference,self.date,self.place,self.name = self.qoute_parsing()
-            print("title: ","\n","--------","\n",self.title,"\n")
-            print("body: ","\n","--------","\n",self.body,"\n")
-            print("reference: ","\n","--------","\n",self.reference,"\n")
-            print("date: ","\n","--------","\n",self.date,"\n")
-            print("place: ","\n","--------","\n",self.place, "\n")
+            
             if self.body_and_name_validity_check(self.body):
                 var1 = True
-                print("aa")
+             
             else:
-                print("a")
+               
                 var1 = False
           
             if self.date_validity_check(self.date):
                 var2 = True
-                print("bb")
+                
             else:
-                print("b")
+                
                 var2 = False
             if self.title_validity_check(self.title):
                 var3 = True
-                print(f"cc")
+                
             else:
-                print("c")
+                
                 var3 = False
         
             if self.place_validity_check(self.place):
                 var4 = True
-                print("dd")
+                
             else:
-                print("d")
+               
                 var4 = False
             if var1 and var2 and var3 and var4:
                
